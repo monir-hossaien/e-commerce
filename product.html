@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a e-commerce website ">
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Product</title>
+</head>
+<body>
+    <!-- navbar starts -->
+
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+        <div class="navbar_logo">
+            <i class="fa-solid fa-head-side-virus fa-4x"></i>
+        </div>
+
+        <div class="navbar_menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav_link">Home</a>
+                </li>
+    
+                <li>
+                    <a href="about.html" class="nav_link">About</a>
+                </li>
+    
+                <li>
+                    <a href="menu.html" class="nav_link">Menu</a>
+                </li>
+    
+                <li>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html"><button class="btn_login">Login</button></a>
+                </li>
+
+                <li>
+                    <a href="registration.html"><button class="btn">Register</button></a>
+                </li>
+    
+                <li>
+                    <a href="cart.html" class="cart_link">
+                        <span><i class="fa-solid fa-cart-shopping"></i><sup>2</sup></span>
+                        
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="profile.html" class="nav_link">
+                        <img class="profile_icon" src="./images/monir.png" alt="profile icon" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- product section start -->
+    <div class="product_description">
+        <div class="product_des_left">
+            <div class="product_img">
+                <img src="./images/product.5.jpg" alt="headphone">
+            </div>
+        </div>
+        <div class="product_des_right">
+            <h3 class="product_title">Sony V-4 Headphone</h3>
+                    <p class="product_des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nisi, amet quod tempora ipsa perspiciatis porro ad doloremque vel provident fugit eum, inventore labore dolor! Cum aut enim mollitia recusandae suscipit, magnam expedita labore unde!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore laborum vero aspernatur sed expedita ab nihil sit incidunt voluptas temporibus fugit quas perferendis voluptates, omnis amet necessitatibus laboriosam maxime!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        
+                    </p>
+                    <p class="product_price">$250</p>
+                    <span><i class="fa-regular fa-star" class="rating"></i></span>
+                    <span><i class="fa-regular fa-star" class="rating"></i></span>
+                    <span><i class="fa-regular fa-star" class="rating"></i></span>
+                    <span><i class="fa-regular fa-star" class="rating"></i></span>
+                    <span><i class="fa-regular fa-star" class="rating"></i></span><br>
+                    <button class="product_btn1">Add to cart</button>
+                    <button class="product_btn1">Back to Shop</button>
+        </div>
+    </div>
+
+    <!-- product section end -->
+
+
+    <!-- footer section starts here -->
+    <section class="footer">
+        <div class="footer_body">
+            <div class="footer_info">
+                <div class="footer_menu">
+                    <ul class="footer_list">
+                        <li class="footer_list_item">
+                            <a href="/index.html">Home</a>
+                            <a href="/about.html">About</a>
+                            <a href="/policy.html">Terms & Policy </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_icon">
+                    <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" class="icon"></i></a>
+                    <a href="www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" class="icon"></i></a>
+                    <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter" class="icon"></i></a>
+                    
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <h3>Newsletter</h3>
+                <input type="email" name="email" id="subscribe_email" required>
+                <button class="subscribe_btn">Submit</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- footer section ends here -->
+    <script src="script/index.js"></script>
+</body>
+</html>

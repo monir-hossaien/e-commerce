@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a e-commerce website ">
+    <title>e-commerce project</title>
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    
+    <!-- navbar starts -->
+
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+        <div class="navbar_logo">
+            <i class="fa-solid fa-head-side-virus fa-4x"></i>
+        </div>
+
+        <div class="navbar_menu">
+            <ul>
+                <li>
+                    <a href="index.html" class="nav_link">Home</a>
+                </li>
+    
+                <li>
+                    <a href="about.html" class="nav_link">About</a>
+                </li>
+    
+                <li>
+                    <a href="menu.html" class="nav_link">Menu</a>
+                </li>
+    
+                <li>
+                    <a href="contact.html" class="nav_link">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html"><button class="btn_login">Login</button></a>
+                </li>
+
+                <li>
+                    <a href="registration.html"><button class="btn">Register</button></a>
+                </li>
+    
+                <li>
+                    <a href="cart.html" class="cart_link">
+                        <span><i class="fa-solid fa-cart-shopping"></i><sup>2</sup></span>
+                        
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="profile.html" class="nav_link">
+                        <img class="profile_icon" src="./images/monir.png" alt="profile icon" >
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner section start -->
+    <div class="banner">
+        <marquee behavior="" direction="">50% Flash Sale</marquee>
+        <div class="banner_feature">
+            <div class="feature_item">
+                <i class="fa-solid fa-truck-fast fa-3x"></i>
+                <p>Shipping Within 7 Days</p>
+            </div>
+    
+            <div class="feature_item">
+                <i class="fa-brands fa-rocketchat fa-3x"></i>
+                <p>Support 24/7</p>
+            </div>
+    
+            <div class="feature_item">
+                <i class="fa-regular fa-credit-card fa-3x"></i>
+                <p>Safe Payment</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section end -->
+
+
+    <!-- product section start-->
+    <section id="main">
+
+        <!-- aside section start-->
+        <div class="aside">
+            <section class="category">
+                <h3 class="title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="phone">
+                            <input type="checkbox" name="Phone" id="phone">Phone
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="Tablet">
+                            <input type="checkbox" name="Tablet" id="Tablet">Tablet
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="Computer">
+                            <input type="checkbox" name="Computer" id="Computer">Computer
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="Smart TV">
+                            <input type="checkbox" name="Smart TV" id="Smart TV">Smart TV
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="Headphone">
+                            <input type="checkbox" name="Headphone" id="Headphone">Headphone
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="Accessories">
+                            <input type="checkbox" name="Accessories" id="Accessories">Accessories
+                        </label>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="price">
+                <h3 class="title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[0-20]">$0-20
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[50-100]">$50-100
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[120-200]">$120-200
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[201-300]">$201-300
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[301-400]">$301-400
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price">
+                            <input type="radio" name="price" id="price" value="[401-500]">$401-500
+                        </label>
+                    </li>
+
+                    
+                </ul>
+            </section>
+
+            <section class="shifing">
+                <h3 class="title">Shipping Option</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="free">
+                            <input type="radio" name="free" id="free" value="free">Free
+                        </label>
+                    </li>
+
+                    <li class="list_item">
+                        <label for="paid">
+                            <input type="radio" name="paid" id="paid" value="paid">Paid
+                        </label>
+                    </li>   
+                </ul>
+            </section>
+            
+        </div>
+        <!-- aside section end-->
+        
+        <!-- main content start -->
+
+        <div class="main_content">
+            <section class="product_sorting">
+                <div class="sort_action">
+                    <label for="sort">Sort by:</label>
+                    <select name="sort" id="sort">
+                        <option value="Sold">Most Sold</option>
+                        <option value="Popular">Most Popular</option>
+                        <option value="Upcoming">Upcoming</option>
+                        <option value="New">Newest Product</option>
+                        <option value="discount">Discount Product</option>
+                    </select>
+                </div>
+
+                <div class="search_action">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </section>
+
+            <!-- product item start -->
+
+            <div class="product_area">
+                <div class="product">
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.8.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$250</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.2.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$290</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.3.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$350</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.4.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$450</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.5.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$210</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product_item">
+                        <div class="product_badge">
+                            <span>In stock</span>
+                            <hr class="hr_design">
+                            <span>Stock out</span>
+                        </div>
+                        <div class="product_img">
+                            <img src="./images/product.6.jpg" alt="headphone">
+                        </div>
+                        <div class="product_details">
+                            <h3 class="product_title">Sony V-4 Headphone</h3>
+                            <p class="product_des">This is a very best headphone.It's Sound Quality is very clear
+                                <a href="product.html">See more</a>
+                            </p>
+                            <p class="product_price">$150</p>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <span><i class="fa-regular fa-star" class="rating"></i></span>
+                            <button class="product_btn">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- product item end -->
+
+        <div class="pagination">
+            <button class=" btn btn_pagination">
+                <i class="fa-solid fa-less-than"></i>
+            </button>
+            <button class=" btn  btn_pagination">2</button>
+            <button class=" btn  btn_pagination">3</button>
+            <button class=" btn  btn_pagination">4</button>
+            <button class=" btn  btn_pagination">5</button>
+            <button class=" btn  btn_pagination">6</button>
+            <button class=" btn  btn_pagination">7</button>
+            <button class=" btn  btn_pagination">8</button>
+            <button class=" btn  btn_pagination">9</button>
+            <button class=" btn  btn_pagination">10</button>
+            <button class=" btn  btn_pagination">
+                <i class="fa-solid fa-greater-than"></i>
+            </button>
+        </div>
+        </div>
+    </section>
+    <!-- product section end-->
+
+
+    <!-- footer section starts here -->
+    <section class="footer">
+        <div class="footer_body">
+            <div class="footer_info">
+                <div class="footer_menu">
+                    <ul class="footer_list">
+                        <li class="footer_list_item">
+                            <a href="/index.html">Home</a>
+                            <a href="/about.html">About</a>
+                            <a href="/policy.html">Terms & Policy </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_icon">
+                    <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" class="icon"></i></a>
+                    <a href="www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" class="icon"></i></a>
+                    <a href="www.twitter.com" target="_blank"><i class="fa-brands fa-twitter" class="icon"></i></a>
+                    
+                </div>
+            </div>
+            <div class="footer_subscribe">
+                <h3>Newsletter</h3>
+                <input type="email" name="email" id="subscribe_email" required>
+                <button class="subscribe_btn">Submit</button>
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- footer section ends here -->
+    <script src="./script/index.js"></script>
+</body>
+</html>
